@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+.main{
+    display: grid;
+    padding: 10px;
+    margin: 100px;
+    place-items: center;
+  
+}
+
+@media (min-width: 780px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr, 1fr;
+        grid-template-areas:
+        "box1 box1 box2 box3"
+        "box4 box5 box5 box3";
+    }
+}
+
+.container {
+    max-width: 1400px;
+    display: grid;
+    gap: 30px;
+    justify-content: space-evenly;
+    
+   
+}
+
+@media (min-width: 780px) {
+    .box1 {
+       grid-area: box1; 
+    }
+}
+
+.box1{
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 25px 25px 40px 5px rgb(0,0,0,0.2);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position-x: right; 
+}
+
+@media (min-width: 780px) {
+    .box2 {
+       grid-area: box2; 
+    }
+}  
+.box2 {
+    border: 1px solid rgb(86, 98, 107);
+    background-color: rgb(86, 98, 107);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 25px 25px 40px 5px rgb(0,0,0,0.2);
+}
+
+@media (min-width: 780px) {
+    .box3 {
+       grid-area: box3; 
+    }
+}
+.box3 {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 25px 25px 40px 5px rgb(0,0,0,0.2);
+}
+
+@media (min-width: 780px) {
+    .box4 {
+       grid-area: box4; 
+    }
+}
+.box4 {
+    
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 25px 25px 40px 5px rgb(0,0,0,0.2);
+}
+
+@media (min-width: 780px) {
+    .box5 {
+       grid-area: box5; 
+    }
+}
+.box5{
+    border: 1px solid rgb(4, 7, 32);
+    background-color:rgb(4, 7, 32);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 25px 25px 40px 5px rgb(0,0,0,0.2);
+} 
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.image{
+    width: 55px;
+    height: 50px; 
+    border: 1px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.img {
+    object-fit: cover;
+}
+.content1 {
+    color: white;
+    font-size: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    line-height: 20px; 
+}
+.statement1 {
+    color: white;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+   
+}
+.paragraph1 {
+    color: white;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+    line-height: 20px;
+}
+.content2 {
+    color: white;
+    font-size: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    line-height: 20px; 
+}
+.statement2 {
+    color: white;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+.paragraph2 {
+    color: white;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+    line-height: 20px;
+}
+.content3 {
+    color:black;
+    font-size: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 10px; 
+    line-height: 20px;
+}
+.content3>h2 {
+    color:gray;
+}
+.statement3 {
+    color: black;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+.paragraph3 {
+    color: gray;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+    line-height: 20px;
+    
+}
+
+.content4 {
+    color:black;
+    font-size: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 10px; 
+    line-height: 20px;
+}
+.content4>h2 {
+    color:gray;
+}
+.statement4 {
+    color: black;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+.paragraph4 {
+    color: gray;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px; 
+    line-height: 20px;  
+}
+
+.content5 {
+    color: white;
+    font-size: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 10px; 
+    line-height: 20px;
+}
+.statement5 {
+    color: white;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+.paragraph5 {
+    color: white;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+
